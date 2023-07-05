@@ -31,10 +31,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <textarea name="testi" class="form-control" required><?= isset($testimoni['testi']) ? $testimoni['testi'] : NULL ?></textarea>
             </div>
             
-            <div class="form-group">
+            <!-- <div class="form-group">
                 <label>Foto</label>
                 <input type="file" name="foto" class="form-control" value="<?= isset($testimoni['foto']) ? $testimoni['foto'] : NULL ?>" >
-            </div>
+            </div> -->
             <button type="submit" name="simpan" class="btn btn-primary mr-2">Simpan</button>
             <a class="btn btn-light" href="<?= site_url('d_testimoni'); ?>">Batal</a>
             </form>

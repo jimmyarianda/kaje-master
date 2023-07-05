@@ -34,7 +34,9 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 {"data": "h_text1"},
                 {"data": "h_text2"},
                 {"data": "h_text3"},
-                {"data": "h_picbanner"},
+                {"data": "h_pic1"},
+                // {"data": "h_pic2"},
+                // {"data": "h_pic3"},
                 {"data": "action"}
             ],
             "order": [[1, 'dsc']],
@@ -64,7 +66,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 {"data": "id_kategori", "visible": false},
                 {"data": "nama_kategori"},
                 {"data": "jenis_kategori"},
-                {"data": "keterangan"},
+                // {"data": "keterangan"},
                 {"data": "foto"},
                 {"data": "action"}
             ],
@@ -96,7 +98,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 {"data": "nama_project"},
                 {"data": "nama_perusahaan"},
                 {"data": "status"},
-                {"data": "keterangan"},
+                // {"data": "keterangan"},
                 {"data": "foto"},
                 {"data": "action"}
             ],

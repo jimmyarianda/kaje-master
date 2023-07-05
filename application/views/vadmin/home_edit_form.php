@@ -30,10 +30,18 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 <label>Text Tiga</label>
                 <input type="text" name="text3" class="form-control" placeholder="Inputkan Text" value="<?= isset($home['h_text3']) ? $home['h_text3'] : NULL ?>" required>
             </div>
-            <!-- <div class="form-group">
-                <label>Banner</label>
-                <input type="file" name="picbanner" class="form-control" value="<?= isset($home['h_picbanner']) ? $home['h_picbanner'] : NULL ?>" required>
-            </div> -->
+            <div class="form-group">
+                <label>Banner Satu</label>
+                <input type="file" name="pic1" class="form-control" value="<?= isset($home['h_pic1']) ? $home['h_pic1'] : NULL ?>" required>
+            </div>
+            <div class="form-group">
+                <label>Banner Dua</label>
+                <input type="file" name="pic2" class="form-control" value="<?= isset($home['h_pic2']) ? $home['h_pic2'] : NULL ?>" required>
+            </div>
+            <div class="form-group">
+                <label>Banner Tiga</label>
+                <input type="file" name="pic3" class="form-control" value="<?= isset($home['h_pic3']) ? $home['h_pic3'] : NULL ?>" required>
+            </div>
             <button type="submit" name="simpan" class="btn btn-primary mr-2">Simpan</button>
             <a class="btn btn-light" href="<?= site_url('d_home'); ?>">Batal</a>
             </form>

@@ -129,7 +129,7 @@ class D_testimoni extends CI_Controller
                 'nama' => $this->input->post('nama', TRUE),
                 'perusahaan' => $this->input->post('perusahaan', TRUE),
                 'testi' => $this->input->post('testi', TRUE),
-                'foto' => (!empty($foto)) ? $foto : $data['project']['foto'],
+                'foto' => (!empty($foto)) ? $foto : $data['testimoni']['foto'],
                 'updated_at' => $updated_at
             ]; 
 

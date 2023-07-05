@@ -28,14 +28,14 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="col-md-6">
                 <div class="contact-info">
                     <div class="contact-item">
-                    <?php foreach ($kontak as $row) { ?>
+                        <?php foreach ($kontak as $row) { ?>
                         <i class="flaticon-address"></i>
-                        <div class="contact-text"> 
+                        <div class="contact-text">
                             <h2><?= $row['perusahaan']; ?></h2>
-                           
+
                             <p><?= $row['lokasi']; ?></p>
                         </div>
-                    <?php } ?>
+                        <?php } ?>
                     </div>
                     <!-- <div class="contact-item">
                     <?php foreach ($kontak as $row) { ?>
@@ -48,11 +48,10 @@ defined('BASEPATH') or exit('No direct script access allowed');
                         <?php } ?>
                     </div> -->
                     <div class="contact-item">
-                    <?php foreach ($kontak as $row) { ?>
+                        <?php foreach ($kontak as $row) { ?>
                         <i class="flaticon-send-mail"></i>
                         <div class="contact-text">
-                        <h2><?= $row['perusahaan']; ?></h2>
-                           
+                            <h2><?= $row['perusahaan']; ?></h2>
                             <p><?= $row['email']; ?></p>
                         </div>
                         <?php } ?>
@@ -62,18 +61,16 @@ defined('BASEPATH') or exit('No direct script access allowed');
             <div class="col-md-6">
                 <div class="contact-form">
                     <div id="success"></div>
-                    
                     <div class="contact-item">
-                    <?php foreach ($kontak as $row) { ?>
-                        
+                        <?php foreach ($kontak as $row) { ?>
                         <div class="contact-text">
-                        <p><?= $row['perusahaan']; ?></p>
-                        <i class="fab fa-whatsapp" style="color: #fcfcfc;"></i>  <a href="https://wa.me/<?= $row['hp']; ?>" rel="noopener" target="_blank" style="color: #fcfcfc;">Hubungi Via WhatsApp</a>
+                            <p><?= $row['perusahaan']; ?></p>
+                            <i class="fab fa-whatsapp" style="color: #fcfcfc;"></i> <a
+                                href="https://wa.me/<?= $row['hp']; ?>" rel="noopener" target="_blank"
+                                style="color: #fcfcfc;">Hubungi Via WhatsApp</a>
                         </div>
                         <?php } ?>
                     </div>
-                        
-                 
                 </div>
             </div>
         </div>

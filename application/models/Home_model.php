@@ -17,6 +17,21 @@ class Home_model extends CI_Model
 		return $this->db->get(self::$_table)->row_array();
 	}
 
+	public function get_steel() 
+    {
+		return $this->db->where('jenis_kategori','Steel Division')->get('kategori')->result_array();
+    }
+
+    	public function get_conce() 
+    {
+		return $this->db->where('jenis_kategori','Concrete Division')->get('kategori')->result_array();
+    }
+
+     	public function get_galvanize() 
+    {
+		return $this->db->where('jenis_kategori','Galvanize Division')->get('kategori')->result_array();
+    }
+
 	public function insert($data)
 	{
 		return $this->db->insert(self::$_table, $data);

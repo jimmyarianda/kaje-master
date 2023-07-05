@@ -33,7 +33,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                 </div>
                 <div class="about-text">
                     <p><?= $tentang['t_text3']; ?></p>
-                    <a class="btn" href="">Learn More</a>
+                    <!-- <a class="btn" href="">Learn More</a> -->
                 </div>
             </div>
         </div>

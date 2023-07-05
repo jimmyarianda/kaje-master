@@ -40,6 +40,8 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                             <th>Text 2</th>
                                             <th>Text 3</th>
                                             <th>Foto Banner</th>
+                                            <!-- <th>Foto Banner 2</th>
+                                            <th>Foto Banner 3</th> -->
                                             <th>Action</th>
                                         </tr>
                                     </thead>

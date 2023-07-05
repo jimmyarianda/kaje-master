@@ -33,7 +33,7 @@ class D_project extends CI_Controller
                 array('db' => 'nama_project', 'dt' => 'nama_project'),
                 array('db' => 'nama_perusahaan', 'dt' => 'nama_perusahaan'),
                 array('db' => 'status', 'dt' => 'status'),
-                array('db' => 'keterangan', 'dt' => 'keterangan'),
+                // array('db' => 'keterangan', 'dt' => 'keterangan'),
                 array('db' => 'foto', 'dt' => 'foto'),
                 array(
                     'db' => 'id_project',

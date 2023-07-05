@@ -7,7 +7,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
         <div class="row">
             <div class="col-12 col-xl-8 mb-4 mb-xl-0">
                 <h3 class="font-weight-bold">Tambah User</h3>
-                <h6 class="font-weight-normal mb-0">Jadwal Masuk Departemen IT <span class="text-primary">- PT. Sumber Alfaria Trijaya Tbk</span></h6>
+                <h6 class="font-weight-normal mb-0">Sistem Web Profil <span class="text-primary">- PT. Kunango Jantan Group</span></h6>
             </div>
         </div>
     </div>

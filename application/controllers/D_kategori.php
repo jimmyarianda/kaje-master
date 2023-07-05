@@ -32,7 +32,7 @@ class D_kategori extends CI_Controller
                 array('db' => 'id_kategori', 'dt' => 'id_kategori'),
                 array('db' => 'nama_kategori', 'dt' => 'nama_kategori'),
                 array('db' => 'jenis_kategori', 'dt' => 'jenis_kategori'),
-                array('db' => 'keterangan', 'dt' => 'keterangan'),
+                // array('db' => 'keterangan', 'dt' => 'keterangan'),
                 array('db' => 'foto', 'dt' => 'foto'),
                 array(
                     'db' => 'id_kategori',

@@ -22,6 +22,9 @@ class Home extends CI_Controller {
 		$data['berita'] = $this->berita_model->get_terbaru();
 		$data['struktur'] = $this->struktur_model->get_struktur();
 		$data['testimoni'] = $this->testimoni_model->get_testimoni();
+		$data['steel'] = $this->home_model->get_steel();
+		$data['conce'] = $this->home_model->get_conce();
+		$data['galvanize'] = $this->home_model->get_galvanize();
 		
 		$data['content'] = 'home/home';
         $this->load->view('home/index', $data);

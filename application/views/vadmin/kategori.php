@@ -38,7 +38,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                             <th>id_kategori</th>
                                             <th>Nama Perusahaan</th>
                                             <th>Jenis Perusahaan</th>
-                                            <th>Keterangan</th>
+                                            <!-- <th>Keterangan</th> -->
                                             <th>Foto</th>
                                             <th>Action</th>
                                         </tr>

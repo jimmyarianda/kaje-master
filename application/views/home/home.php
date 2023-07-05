@@ -11,7 +11,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
     </ol>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="<?= site_url() ?>assets/assets_home/img/carousel-1.jpg" alt="Carousel Image">
+            <img src="<?= site_url() ?>assets/assets_home/img/<?= $home['h_pic1']?>" alt="Carousel Image">
             <div class="carousel-caption">
                 <p class="animated fadeInRight"><?= $home['h_text1']; ?></p>
                 <h1 class="animated fadeInLeft"><?= $home['h_text2']; ?></h1>
@@ -19,7 +19,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
         </div>
         <div class="carousel-item">
-            <img src="<?= site_url() ?>assets/assets_home/img/carousel-2.jpg" alt="Carousel Image">
+            <img src="<?= site_url() ?>assets/assets_home/img/<?= $home['h_pic2']?>" alt="Carousel Image">
             <div class="carousel-caption">
                 <p class="animated fadeInRight"><?= $home['h_text1']; ?></p>
                 <h1 class="animated fadeInLeft"><?= $home['h_text2']; ?></h1>
@@ -27,7 +27,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
             </div>
         </div>
         <div class="carousel-item">
-            <img src="<?= site_url() ?>assets/assets_home/img/carousel-3.jpg" alt="Carousel Image">
+            <img src="<?= site_url() ?>assets/assets_home/img/<?= $home['h_pic2']?>" alt="Carousel Image">
             <div class="carousel-caption">
                 <p class="animated fadeInRight"><?= $home['h_text1']; ?></p>
                 <h1 class="animated fadeInLeft"><?= $home['h_text2']; ?></h1>
@@ -71,8 +71,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <!-- </div> -->
                     <div class="feature-text">
                         <h3>Steel Division</h3>
-                        <li><a href="<?= site_url('h_detail1')?>">PT. KUNANGO JANTAN</a></li>
-                        <li><a href="<?= site_url('h_detail2')?>">PT. TIGA PILAR SAKATO</a></li>
+                        <?php foreach ($steel as $row) { ?>
+                        <li><a
+                                href="<?= site_url('h_produk/detail/')?><?= $row['id_kategori']; ?>"><?= $row['nama_kategori']; ?></a>
+                        </li>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -83,8 +86,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <!-- </div> -->
                     <div class="feature-text">
                         <h3>Concrete Division</h3>
-                        <li><a href="<?= site_url('h_detail3')?>">PT. KJ BETON PADANG</a></li>
-                        <li><a href="<?= site_url('h_detail4')?>">PT. KJ BETON PEKANBARU</a></li>
+                        <?php foreach ($conce as $row) { ?>
+                        <li><a
+                                href="<?= site_url('h_produk/detail/')?><?= $row['id_kategori']; ?>"><?= $row['nama_kategori']; ?></a>
+                        </li>
+                        <?php } ?>
                     </div>
                 </div>
             </div>
@@ -95,7 +101,11 @@ defined('BASEPATH') or exit('No direct script access allowed');
                     <!-- </div> -->
                     <div class="feature-text">
                         <h3>Galvanize Division</h3>
-                        <li><a href="<?= site_url('h_detail5')?>">PT. KARYA EMPAT PILAR</a></li><br>
+                        <?php foreach ($galvanize as $row) { ?>
+                        <li><a
+                                href="<?= site_url('h_produk/detail/')?><?= $row['id_kategori']; ?>"><?= $row['nama_kategori']; ?></a>
+                        </li>
+                        <?php } ?><br>
                     </div>
                 </div>
             </div>
@@ -427,31 +437,30 @@ defined('BASEPATH') or exit('No direct script access allowed');
 <!-- FAQs End -->
 
 <!-- Testimonial Start -->
-<div class="testimonial wow fadeIn" data-wow-delay="0.1s">
+<div class="testimonial wow fadeIn" data-wow-delay="0.2s">
     <div class="container">
         <div class="row">
             <div class="col-12">
-                <div class="testimonial-slider-nav">
-                    <?php foreach ($testimoni as $row) { ?>
-                    <div class="slider-nav"><img src="<?= site_url() ?>assets/assets_home/img/<?= $row['foto']; ?>"
+                <!-- <div class="testimonial-slider-nav"> -->
+                    <!-- <?php foreach ($testimoni as $row1) { ?>
+                    <div class="slider-nav"><img src="<?= site_url() ?>assets/assets_home/img/<?= $row1['foto']; ?>"
                             alt="Testimonial"></div>
                     <?php } ?>
+                </div> -->
+                <div class="testimonial-slider">
+                    <?php foreach ($testimoni as $row2) { ?>
+                    <div class="slider-item">
+                        <h3><?= $row2['nama']; ?></h3>
+                        <h4><?= $row2['perusahaan']; ?></h4>
+                        <p><?= $row2['testi']; ?></p>
+                    </div>
+                    <?php } ?>
                 </div>
-
             </div>
         </div>
         <div class="row">
             <div class="col-12">
-                <div class="testimonial-slider">
-                    <?php foreach ($testimoni as $row) { ?>
-                    <div class="slider-item">
-                        <h3><?= $row['nama']; ?></h3>
-                        <h4><?= $row['perusahaan']; ?></h4>
-                        <p><?= $row['testi']; ?></p>
-                    </div>
-                    <?php } ?>
-
-                </div>
+                
             </div>
         </div>
     </div>

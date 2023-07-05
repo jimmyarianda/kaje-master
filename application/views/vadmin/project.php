@@ -39,7 +39,7 @@ defined('BASEPATH') or exit('No direct script access allowed');
                                             <th>nama_project</th>
                                             <th>nama_perusahaan</th>
                                             <th>status</th>
-                                            <th>keterangan</th>
+                                            <!-- <th>keterangan</th> -->
                                             <th>foto</th>
                                             <th>Action</th>
                                         </tr>
